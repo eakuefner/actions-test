@@ -1,0 +1,7 @@
+name: mac test
+on: workflow_dispatch
+jobs:
+    get_version:
+        runs-on: mac-latest
+        steps:
+            - run: system_profiler SPSoftwareDataType SPHardwareDataType
