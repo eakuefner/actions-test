@@ -1,5 +1,5 @@
 name: mac test
-on: workflow_dispatch
+on: push
 jobs:
     get_version:
         runs-on: macos-13-xlarge
