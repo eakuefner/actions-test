@@ -4,6 +4,6 @@ jobs:
     install_nix:
         runs-on: ubuntu-latest
         steps:
-        - uses: cachix/install-nix-action@25
+        - uses: cachix/install-nix-action@v25
         - name: Print nixpkgs version
           run: nix-instantiate --eval -E '(import <nixpkgs> {}).lib.version'
